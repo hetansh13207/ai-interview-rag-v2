@@ -1,0 +1,648 @@
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background: #f7f7f7;
+
+    color: #111827;
+
+    min-height: 100vh;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease;
+}
+
+
+/* =====================================================
+   MAIN CONTAINER
+===================================================== */
+
+.home-container {
+
+    width: min(
+        1100px,
+        calc(100% - 40px)
+    );
+
+    margin: 0 auto;
+
+    padding: 55px 0 35px;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.home-header {
+
+    display: flex;
+
+    justify-content:
+        space-between;
+
+    align-items:
+        flex-start;
+
+    gap: 40px;
+
+    margin-bottom: 75px;
+}
+
+
+.eyebrow {
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing:
+        1.5px;
+
+    margin-bottom: 14px;
+}
+
+
+.home-header h1 {
+
+    font-size: 56px;
+
+    line-height: 1.08;
+
+    letter-spacing:
+        -2px;
+
+    margin-bottom: 22px;
+}
+
+
+.home-subtitle {
+
+    max-width: 650px;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    color: #5f6368;
+}
+
+
+/* =====================================================
+   THEME BUTTON
+===================================================== */
+
+.theme-toggle {
+
+    border: 1px solid #d1d5db;
+
+    background: white;
+
+    color: #111827;
+
+    border-radius: 999px;
+
+    padding:
+        10px 16px;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    white-space: nowrap;
+}
+
+
+.theme-toggle:hover {
+
+    transform:
+        translateY(-1px);
+}
+
+
+/* =====================================================
+   SECTION HEADING
+===================================================== */
+
+.features-section {
+
+    margin-bottom: 70px;
+}
+
+
+.section-heading {
+
+    margin-bottom: 30px;
+}
+
+
+.section-heading h2 {
+
+    font-size: 30px;
+
+    margin-bottom: 12px;
+
+    letter-spacing:
+        -0.5px;
+}
+
+
+.section-heading p:last-child {
+
+    color: #6b7280;
+
+    font-size: 16px;
+
+    line-height: 1.6;
+}
+
+
+/* =====================================================
+   FEATURE GRID
+===================================================== */
+
+.feature-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+
+/* =====================================================
+   FEATURE CARD
+===================================================== */
+
+.feature-card {
+
+    display: flex;
+
+    gap: 22px;
+
+    background: white;
+
+    border:
+        1px solid #e5e7eb;
+
+    border-radius: 16px;
+
+    padding: 28px;
+
+    min-height: 330px;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease;
+}
+
+
+.feature-card:hover {
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 10px 30px
+        rgba(0, 0, 0, 0.07);
+}
+
+
+.feature-card.featured {
+
+    border-color:
+        #111827;
+
+    grid-column:
+        span 2;
+}
+
+
+/* =====================================================
+   FEATURE ICON
+===================================================== */
+
+.feature-icon {
+
+    width: 48px;
+
+    height: 48px;
+
+    min-width: 48px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background: #111827;
+
+    color: white;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing:
+        0.5px;
+}
+
+
+/* =====================================================
+   FEATURE CONTENT
+===================================================== */
+
+.feature-content {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    flex: 1;
+}
+
+
+.feature-status {
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing:
+        1.2px;
+
+    margin-bottom: 10px;
+
+    color: #111827;
+}
+
+
+.feature-status.coming-soon {
+
+    color: #6b7280;
+}
+
+
+.feature-content h3 {
+
+    font-size: 24px;
+
+    margin-bottom: 12px;
+
+    letter-spacing:
+        -0.3px;
+}
+
+
+.feature-content p {
+
+    color: #6b7280;
+
+    font-size: 15px;
+
+    line-height: 1.65;
+
+    max-width: 620px;
+
+    margin-bottom: 18px;
+}
+
+
+/* =====================================================
+   FEATURE POINTS
+===================================================== */
+
+.feature-points {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-bottom: 24px;
+}
+
+
+.feature-points span {
+
+    border:
+        1px solid #e5e7eb;
+
+    border-radius: 999px;
+
+    padding:
+        6px 10px;
+
+    font-size: 12px;
+
+    color: #4b5563;
+
+    background: #fafafa;
+}
+
+
+/* =====================================================
+   FEATURE BUTTON
+===================================================== */
+
+.feature-button {
+
+    margin-top: auto;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    text-decoration: none;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background: #111827;
+
+    color: white;
+
+    padding:
+        12px 17px;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        opacity 0.2s ease;
+}
+
+
+.feature-button:hover {
+
+    opacity: 0.85;
+}
+
+
+.feature-button.disabled {
+
+    background: #e5e7eb;
+
+    color: #9ca3af;
+
+    cursor:
+        not-allowed;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.home-footer {
+
+    padding-top: 30px;
+
+    border-top:
+        1px solid #e5e7eb;
+
+    display: flex;
+
+    justify-content:
+        space-between;
+
+    gap: 20px;
+
+    color: #6b7280;
+
+    font-size: 13px;
+}
+
+
+/* =====================================================
+   DARK MODE
+===================================================== */
+
+body.dark-theme {
+
+    background: #111111;
+
+    color: #f5f5f5;
+}
+
+
+body.dark-theme
+.home-subtitle {
+
+    color: #b7b7b7;
+}
+
+
+body.dark-theme
+.section-heading p:last-child {
+
+    color: #a1a1a1;
+}
+
+
+body.dark-theme
+.feature-card {
+
+    background: #191919;
+
+    border-color: #333333;
+}
+
+
+body.dark-theme
+.feature-card.featured {
+
+    border-color: #666666;
+}
+
+
+body.dark-theme
+.feature-content p {
+
+    color: #b7b7b7;
+}
+
+
+body.dark-theme
+.feature-points span {
+
+    background: #222222;
+
+    border-color: #333333;
+
+    color: #c5c5c5;
+}
+
+
+body.dark-theme
+.feature-status {
+
+    color: #f5f5f5;
+}
+
+
+body.dark-theme
+.feature-status.coming-soon {
+
+    color: #999999;
+}
+
+
+body.dark-theme
+.feature-button {
+
+    background: #f5f5f5;
+
+    color: #111111;
+}
+
+
+body.dark-theme
+.feature-button.disabled {
+
+    background: #333333;
+
+    color: #777777;
+}
+
+
+body.dark-theme
+.theme-toggle {
+
+    background: #222222;
+
+    border-color: #444444;
+
+    color: #f5f5f5;
+}
+
+
+body.dark-theme
+.home-footer {
+
+    border-color: #333333;
+
+    color: #999999;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (
+    max-width: 800px
+) {
+
+    .home-header {
+
+        flex-direction:
+            column;
+    }
+
+
+    .home-header h1 {
+
+        font-size: 42px;
+    }
+
+
+    .feature-grid {
+
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .feature-card.featured {
+
+        grid-column:
+            span 1;
+    }
+
+}
+
+
+@media (
+    max-width: 550px
+) {
+
+    .home-container {
+
+        width:
+            min(
+                100% - 28px,
+                1100px
+            );
+
+        padding-top: 35px;
+    }
+
+
+    .home-header {
+
+        margin-bottom: 50px;
+    }
+
+
+    .home-header h1 {
+
+        font-size: 36px;
+    }
+
+
+    .home-subtitle {
+
+        font-size: 16px;
+    }
+
+
+    .feature-card {
+
+        flex-direction:
+            column;
+
+        min-height:
+            auto;
+    }
+
+
+    .home-footer {
+
+        flex-direction:
+            column;
+    }
+
+}
